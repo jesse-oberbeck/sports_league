@@ -1,0 +1,6 @@
+CREATE TABLE games (
+id INTEGER(4) NOT NULL,
+day DATE NOT NULL,
+time TIME NOT NULL,
+PRIMARY KEY(id)
+)
