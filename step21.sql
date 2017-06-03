@@ -1,7 +1,7 @@
 #Shows win loss record for all teams.
 
 #Makes a view listing a team's name each time they've won, then counts occurences of each name.
-drop view if exists win_list;
-create view win_list as select t.name from teams t, scores s where t.id = s.teamid and s.winloss = 'W';
+DROP VIEW if EXISTS win_list;
+CREATE VIEW win_list AS SELECT t.name FROM teams t, scores s WHERE t.id = s.teamid AND s.winloss = 'W';
 
-select name, count(*) as 'win count' from win_list group by name order by 'win count';
+SELECT name, count(*) AS 'win count' FROM win_list GROUP BY name ORDER BY 'win count';

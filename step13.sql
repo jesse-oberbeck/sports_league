@@ -1,3 +1,3 @@
 #Shows all unassigned players.
 
-select concat(players.lname, ', ' , players.fname) AS name from players where team is NULL;
+SELECT concat(players.lname, ', ' , players.fname) AS name FROM players WHERE team IS NULL;

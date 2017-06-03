@@ -1,6 +1,6 @@
 #Shows which team has the highest score of all games.
 
-drop view if exists total_scores;
-create view total_scores as select teamid, sum(points) as total from scores group by teamid; 
+DROP VIEW IF EXISTS total_scores;
+CREATE VIEW total_scores AS SELECT teamid, sum(points) AS total FROM scores GROUP BY teamid; 
 
-select t.name, total from teams t, total_scores where t.id = total_scores.teamid and total in (select max(total) from total_scores);
+SELECT t.name, total FROM teams t, total_scores WHERE t.id = total_scores.teamid AND total IN (SELECT max(total) FROM total_scores);

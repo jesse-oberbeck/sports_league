@@ -1,3 +1,3 @@
 #Shows highest score out of all games.
 
-select t.name, points from teams t, scores where points in (select max(points) from scores) and t.id = scores.teamid;
+SELECT t.name, points FROM teams t, scores WHERE points IN (SELECT max(points) FROM scores) AND t.id = scores.teamid;

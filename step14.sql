@@ -1,3 +1,3 @@
 #Shows number of teams.
 
-select count(*) as 'number of teams' from teams;
+SELECT count(*) AS 'number of teams' FROM teams;

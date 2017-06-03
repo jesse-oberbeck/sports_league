@@ -1,3 +1,3 @@
 #Shows which team has the highest average score.
 
-select t.name, avg(s.points) as 'average points' from teams t, scores s where t.id = s.teamid group by t.name order by 'average points' limit 1;
+SELECT t.name, avg(s.points) AS 'average points' FROM teams t, scores s WHERE t.id = s.teamid GROUP BY t.name ORDER BY 'average points' limit 1;

@@ -1,6 +1,6 @@
 #Shows the highest score of each team.
 
-drop view if exists total_scores;
-create view total_scores as select teamid, sum(points) as total from scores group by teamid; 
+DROP VIEW IF EXISTS total_scores;
+CREATE VIEW total_scores AS SELECT teamid, sum(points) AS total FROM scores GROUP BY teamid; 
 
-select t.name, total from teams t, total_scores where t.id = total_scores.teamid;
+SELECT t.name, total FROM teams t, total_scores WHERE t.id = total_scores.teamid;
