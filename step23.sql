@@ -1,0 +1,9 @@
+#Removes all data relating to league.
+
+SET FOREIGN_KEY_CHECKS = 0;
+DROP TABLE IF EXISTS teams;
+DROP TABLE IF EXISTS players;
+DROP TABLE IF EXISTS personal;
+DROP TABLE IF EXISTS games;
+DROP TABLE IF EXISTS scores;
+DROP VIEW IF EXISTS win_list;

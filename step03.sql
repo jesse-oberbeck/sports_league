@@ -1,3 +1,5 @@
+#Make table for player personal data/physical stats. refers to players table.
+
 CREATE TABLE personal (
 age INTEGER(4) NOT NULL,
 height INTEGER(4) NOT NULL,

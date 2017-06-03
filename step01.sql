@@ -3,6 +3,8 @@ DROP TABLE IF EXISTS players;
 DROP TABLE IF EXISTS personal;
 DROP TABLE IF EXISTS games;
 
+#Make the table for teams.
+
 CREATE TABLE teams (
 name VARCHAR(20) NOT NULL,
 id INTEGER(4) NOT NULL,
